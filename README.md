@@ -16,7 +16,7 @@ To use the application, you can scroll down to the 3 images of the different siz
 
 ---
 
-Developers:
+## Developers:
 
 <ol>
   <li>Crystal Bundy</li>
