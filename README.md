@@ -18,7 +18,7 @@ Developers of the application: Crystal Bundy, Wesley Louis, Krystal Hardin, Kyle
 
 ---
 
-Mock-Up page: 
+## Mock-Up page: 
 ![image](https://github.com/user-attachments/assets/2131e4f7-8a2b-42eb-bd5a-027815fa479d)
 
 ---
