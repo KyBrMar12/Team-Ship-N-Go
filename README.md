@@ -16,13 +16,16 @@ To use the application, you can scroll down to the 3 images of the different siz
 
 ---
 
-## Developers of the application: 
-Crystal Bundy
-Wesley Louis 
-Krystal Hardin
-Kyle Marcak
-Matt Dearlove
-Shayna Sammy
+Developers:
+
+<ol>
+  <li>Crystal Bundy</li>
+  <li>Wesley Louis</li>
+  <li>Krystal Hardin</li>
+  <li>Kyle Marcak</li>
+  <li>Matt Dearlove</li>
+  <li>Shayna Sammy</li>
+</ol>
 
 ---
 
