@@ -1,6 +1,3 @@
-# YOUR REPOSITORY HAS BEEN HACKED BY TA THAIS BECAUSE YOU FORGOT TO PREVENT PUSHES TO MAIN
-## HAVE A GOOD DAY!
-
 # Team Ship-N-GO
 This repository contains team Ship-N-GO's files for implementing a mailbox rental reservation application based on rate, size, and lease term. 
 
