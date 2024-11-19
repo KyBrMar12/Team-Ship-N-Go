@@ -38,7 +38,11 @@ function showPopup(title, info, rate) {
 
 closePopup.addEventListener("click", () => {
     popup.style.display = "none";
-    document.getElementById("popup-overlay").style.display = "none"; // Hide the overlay
+
+    const overlay = document.getElementById("popup-overlay");
+    if (overlay) {
+        overlay.style.display = "none"; // Safely hide the overlay if it exists
+    }
 });
 
 window.addEventListener("click", (event) => {
