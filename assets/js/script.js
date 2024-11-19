@@ -8,6 +8,7 @@ const reservePopup = document.getElementById("reserve-popup");
 const formPopup = document.getElementById("form-popup");
 const closeFormPopup = document.getElementById("close-form-popup");
 const reservationForm = document.getElementById("reservation-form");
+const errorMessageContainer = document.getElementById("error-message"); // Add a container for error messages
 
 const mailboxRates = {
     "Small Mailbox": 20,
@@ -37,7 +38,11 @@ function showPopup(title, info, rate) {
 
 closePopup.addEventListener("click", () => {
     popup.style.display = "none";
-    document.getElementById("popup-overlay").style.display = "none"; // Hide the overlay
+
+    const overlay = document.getElementById("popup-overlay");
+    if (overlay) {
+        overlay.style.display = "none"; // Safely hide the overlay if it exists
+    }
 });
 
 window.addEventListener("click", (event) => {
@@ -108,7 +113,7 @@ reservationForm.addEventListener("submit", (event) => {
     const selectedLeaseTerm = leaseTerm.dataset.selectedTerm;
 
     if (!name || !leaseTotal || !email || !selectedLeaseTerm) {
-        alert("Name, lease total, lease term, or email missing. Please check your inputs.");
+        displayErrorMessage("Name, lease total, lease term, or email is missing. Please check your inputs.");
         return;
     }
 
@@ -128,11 +133,48 @@ reservationForm.addEventListener("submit", (event) => {
     localStorage.setItem("email", email);
     localStorage.setItem("mailboxNumber", randomMailboxNumber);
 
-    alert(`Reservation submitted for ${name}!
-Assigned Mailbox: ${randomMailboxNumber}
-Email confirmation sent to ${email}!
-Lease Total: ${formattedLeaseTotal}
-Lease Term: ${selectedLeaseTerm}`);
+    // Display local storage modal after reservation
+    const modal = document.getElementById("local-storage-modal");
+    const list = document.getElementById("local-storage-list");
+
+    // Add custom message
+    list.innerHTML = `<p>A confirmation email has been sent to ${email} with the info below. Thank you for your reservation!</p>`;
+
+    // Populate the list with localStorage items
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+
+        const listItem = document.createElement("li");
+        listItem.textContent = `${key}: ${value}`;
+        list.appendChild(listItem);
+    }
+
+    modal.style.display = "flex";
 
     formPopup.style.display = "none";
+});
+
+// Display error message in a designated container
+function displayErrorMessage(message) {
+    if (errorMessageContainer) {
+        errorMessageContainer.textContent = message;
+        errorMessageContainer.style.display = "block";
+        setTimeout(() => {
+            errorMessageContainer.style.display = "none";
+        }, 5000);
+    }
+}
+
+// Close button functionality
+document.getElementById("close-local-storage-modal").addEventListener("click", () => {
+    document.getElementById("local-storage-modal").style.display = "none";
+});
+
+// Close the modal when clicking outside of it
+window.addEventListener("click", (event) => {
+    const modal = document.getElementById("local-storage-modal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 });

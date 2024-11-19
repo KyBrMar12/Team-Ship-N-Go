@@ -16,26 +16,6 @@
     <title>Ship & Go</title>
   </head>
   <body>
-    <!--
-       <header id="Top">
-            <h1>Ship-N-Go</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="#Rentals">Mailbox Rental</a>
-                <a href="#Top">Services</a>
-                <a href="#Contact">Contact Us</a>
-            </nav>
-        </header>
-    -->
-    <!--<main>
-            <section class="page-section">
-                <h2 id="Services">Additional Services</h2>
-                <p>Here is a paragraph about Ship-N-Go Services</p>
-            </section>
-        </main>
-        
-    -->
     <!-- Nav Bar -->
      <!-- copy lines 40-71 for Krystal's header-->
     <nav class="nav-wrapper">
@@ -57,12 +37,14 @@
     <ul class="sidenav" id="mobile-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="#Rentals">Mailbox Rental</a></li>
+      <li><a href="index.html#Rentals">Mailbox Rental</a></li>
       <li><a href="#Top">Services</a></li>
       <li><a href="#Contact">Contact Us</a></li>
     </ul>
 
     <!-- Adding functionality to the mobile nav menu -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
