@@ -1,40 +1,49 @@
-# **Team Ship-N-GO**
+# **Ship-N-Go: Mailbox Rental Reservation System**
 
 ---
 
-## Description:
-
-This repository contains team Ship-N-GO's files for implementing a mailbox rental reservation application based on rate, size, and lease term. 
-
----
-
-## Use:
-
-To run the application, simply go to the gitHub page link: https://kybrmar12.github.io/Team-Ship-N-Go/ 
-
-To use the application, you can scroll down to the 3 images of the different size mailboxes we offer and click one of the black reserve buttons to enter your information to reserve. Likewise you can move your cursor around the interactive links at the top of the header for additional info and services. 
+## 📜 **Overview/Description**
+Ship-N-Go is an intuitive and efficient web application designed to simplify mailbox rental reservations. Customers can explore different mailbox sizes, check pricing, and reserve a mailbox seamlessly online.
+##  🏃 **To run the application, click the link below:**
+🔗 **Live Application**: [Ship-N-Go on GitHub Pages](https://kybrmar12.github.io/Team-Ship-N-Go/)
 
 ---
 
-## Developers:
-
-<ol>
-  <li>Crystal Bundy</li>
-  <li>Wesley Louis</li>
-  <li>Krystal Hardin</li>
-  <li>Kyle Marcak</li>
-  <li>Matt Dearlove</li>
-  <li>Shayna Sammy</li>
-</ol>
+## 🚀 **Features**
+- **Interactive Mailbox Selection**: Choose from a variety of mailbox sizes with clear pricing details.
+- **Streamlined Reservations**: Effortlessly reserve a mailbox by providing basic details via an intuitive form.
+- **Responsive Navigation**: Explore additional services and information through interactive links and a mobile-friendly interface.
 
 ---
 
-## Mock-Up page: 
-![image](https://github.com/user-attachments/assets/2131e4f7-8a2b-42eb-bd5a-027815fa479d)
+## 🛠 **How to Use**
+1. Visit the live site using the link above.
+2. Scroll to the mailbox options and click on the **Reserve** button for your preferred size.
+3. Complete the reservation form with your details.
+4. Explore additional services and details via the navigation menu.
 
 ---
 
-License: 
+## 🧑‍💻 **Development Team**
+We are a dedicated group of developers committed to delivering seamless user experiences. Meet the team:
+- **Crystal Bundy**
+- **Wesley Louis**
+- **Krystal Hardin**
+- **Kyle Marcak**
+- **Matt Dearlove**
+- **Shayna Sammy**
+
+---
+
+## 🎨 **Mock-Up**
+![Application Mock-Up](https://github.com/user-attachments/assets/2131e4f7-8a2b-42eb-bd5a-027815fa479d)
+
+---
+
+## 📝 **License**
+This project is licensed under the **MIT License**. See details below:
+
+```plaintext
 MIT License
 
 Copyright (c) 2024 KyBrMar12
