@@ -31,6 +31,7 @@ We are a dedicated group of developers committed to delivering seamless user exp
 - **Krystal Hardin**
 - **Kyle Marcak**
 - **Matt Dearlove**
+- **Shayna Sammy**
 
 ---
 
